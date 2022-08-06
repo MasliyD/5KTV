@@ -1,18 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/xjb8nbs.css">
+    <script src="https://kit.fontawesome.com/0a4af1d0c5.js" crossorigin="anonymous"></script>
     <title>5KTV</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <article>
-    <h1>5KTV</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quas dolor blanditiis cumque repellat nobis. Rem dignissimos quis aperiam autem.
-    </p>
-    </article>
+
+    <!--Header-->
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__top-container">
+                <div class="header__item">
+                    <a href="#" class="header__link">Доставка та оплата</a>
+                    
+                    <a href="#" class="header__link">Контакти</a>
+                </div>
+
+                <div class="header__item header__item-center">
+                    <a href="#" class="header__link">Побудуй та облаштуй</a>
+                    <div class="header__circles">
+                        <!--<i class="fa-solid fa-ellipsis"></i>-->
+                        <div class="header__circle"></div>
+                        <div class="header__circle"></div>
+                        <div class="header__circle"></div>
+                    </div>
+                    <a href="#" class="header__link">Все для дому, дачі та будівництва!</a>
+                </div>
+
+                <div class="header__item">
+                    <a href="#" class="header__icon"><i class="fa-solid fa-signal"></i></a>
+                
+                    <a href="#" class="header__icon"><i class="fa-regular fa-heart"></i></a>
+                    
+                    <a href="#" class="header__icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+        </div> <!--header__top-->
+
+        <div class="header__main container">
+            <img class="header__logo" src="images/logo.svg" alt="Логотип">
+            <a class="header__contact" href="tel:+380989075833"> +38 (098) 90 75 833 </a>
+            
+            <form class="header__form">
+                <input class="header__search" type="search" placeholder="Що шукаємо?..">
+                <button class="header__search-btn" type="submit">Пошук</button>
+            </form>
+            
+            <div class="header__social">
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-tumblr"></i>
+                </a>
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+            </div>
+            
+            <button class="header__btn">Адреси магазинів</button>
+            
+            <a href="#" class="header__person">
+                <i class="fa-solid fa-image-portrait"></i>
+            </a>
+            
+        </div> <!--header__main-->
+
+        <div class="header__nav">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__menu">
+                        <input id="first-check" class="nav__check" type="checkbox" name="menu"/>
+                        <label for="first-check" class="nav__label"><i class="fa-solid fa-bars"></i><span>Каталог</span></label>
+                        <div class="bg"></div>
+                        <ul class="nav__drop">
+                            
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Акумулятори</label>
+                                <div class="nav__submenu">
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                    <div class="nav__submenu-item">Підкатегорія<span>(123)</span></div>
+                                </div>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Блоки контролю</label>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Генератори</label>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Кліматична техніка</label>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Опалення</label>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Перфоратори</label>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Дроти</label>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Акумулятори</label>
+                            </div>
+
+                            <div class="nav__cat">
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Акумулятори</label>
+                            </div>
+                            
+                            <div class="nav__cat">    
+                                <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+                                <label   label for="second-check" class="nav__first">Акумулятори</label>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="nav__link">Акумулятори</a>
+                    <a href="#" class="nav__link">Блоки контролю</a>
+                    <a href="#" class="nav__link">Генератори</a>
+                    <a href="#" class="nav__link">Кліматична техніка</a>
+                    <a href="#" class="nav__link">Опалення</a>
+                    <a href="#" class="nav__link">Перфоратори</a>
+                    <a href="#" class="nav__link">Дроти</a>
+                    <a href="#" class="nav__link">Акумулятори</a>
+                    <!--<a href="#" class="nav__link">Акумулятори</a>
+                    <a href="#" class="nav__link">Акумулятори</a>-->
+
+
+                </nav><!--header__nav-->
+            </div>
+        </div>
+
+    </header>
+
+    <!--<div class="nav__cat">    
+        <input id="second-check" class="nav__check" type="checkbox" name="menu"/>
+        <label   label for="second-check" class="nav__first a">Акумулятори</label>
+    </div>-->
+    
+
+    <div class="test"></div>
+
 </body>
 </html>
+
+
+
+
+
+<!-- 
+
+<div class="header__main container">
+            <div class="header__logo"><img src="images/logo.svg" alt="Логотип"></div>
+            <div class="header__contact"><a href="tel:+380989075833"> +38 (098) 90 75 833 </a></div>
+            <div class="header__form">
+                <form>
+                    <div class="header__search">
+                        <input type="search" placeholder="Що шукаємо?..">
+                        <button type="submit">Пошук</button>
+                   </div>
+                </form>
+            </div>
+            <div class="header__social">
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-tumblr"></i>
+                </a>
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="header__social-icon">
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+            </div>
+            <div class="header__btn">
+                <button class="header__btn">Адреси магазинів</button>
+            </div>
+            <div class="person">
+                <a href="#" class="header__person">
+                    <i class="fa-solid fa-image-portrait"></i>
+                </a>
+            </div>
+        </div> 
+
+-->
+
+
+<!--
+
+     <nav class="nav container">
+
+            <input id="first-check" class="nav__check" type="checkbox" name="menu"/>
+            <label for="first-check" class="nav__label"><i class="fa-solid fa-bars"></i><span>Каталог</span></label>
+                <ul class="nav__drop">
+                    <a href="#">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3 Category 3</a>
+                    <a href="#">Category 4</a>
+                    <a href="#">Category 5 Category 5</a>
+                </ul>
+
+            <a href="#" class="nav__link">Акумулятори</a>
+            <a href="#" class="nav__link">Блоки контролю</a>
+            <a href="#" class="nav__link">Генератори</a>
+            <a href="#" class="nav__link">Кліматична техніка</a>
+            <a href="#" class="nav__link">Опалення</a>
+            <a href="#" class="nav__link">Перфоратори</a>
+            <a href="#" class="nav__link">Дроти</a>
+            <a href="#" class="nav__link">Акумулятори</a>
+            <a href="#" class="nav__link">Акумулятори</a>
+            <a href="#" class="nav__link">Акумулятори</a>
+        </nav>   
+
+
+                                <div class="nav__cat">    
+                                <a href="#" class="nav__first">Акумулятори</a></div>
+
+-->
