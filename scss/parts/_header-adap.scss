@@ -1,0 +1,22 @@
+//Header adaptive
+
+@media (max-width: 1400px) {
+    
+    .header {
+        &__contact {
+            font-size: 20px;
+        }
+
+        &__social {
+            gap: 10px;
+        }
+
+        &__contact {
+            display: none;
+        }
+
+        &__contact-icon {
+            display: block;
+        }
+    }
+}
