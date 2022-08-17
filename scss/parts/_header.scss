@@ -3,6 +3,7 @@
 //header__top
 .header {
     font-size: 16px;
+    margin-bottom: 20px;
 
     &__top {
         background-color: v.$color7;
@@ -330,50 +331,52 @@
 }
 
 //slick
-.slider {
-    padding: 0 20px;
-}
+.header {
+    & .slider {
+        padding: 0 20px;
+    }
 
-.slick-track {
-    display: flex;
-    height: 100%;
-    gap: 23px;
-}
+    & .slick-track {
+        display: flex;
+        height: 100%;
+        gap: 23px;
+    }
 
-.slick-list {
-    overflow: hidden;
-}
+    & .slick-list {
+        overflow: hidden;
+    }
 
-.slider .slick-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
-    font-size: 0;
-    background: transparent;
-}
+    & .slider .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        font-size: 0;
+        background: transparent;
+    }
 
-/*.slider .slick-arrow.slick-prev {
-    left: 10px;
-    border-top:5px solid transparent;
-    border-bottom:5px solid transparent;
-    border-right:5px solid v.$color5;
-    border-left:0 solid v.$color5;
-}*/
+    /*& .slider .slick-arrow.slick-prev {
+        left: 10px;
+        border-top:5px solid transparent;
+        border-bottom:5px solid transparent;
+        border-right:5px solid v.$color5;
+        border-left:0 solid v.$color5;
+    }*/
 
-.slider .slick-arrow.slick-next {
-    right: 10px;
-    border-top:5px solid transparent;
-    border-bottom:5px solid transparent;
-    border-left:5px solid v.$color5;
-    border-right:0 solid v.$color5;
-}
+    & .slider .slick-arrow.slick-next {
+        right: 10px;
+        border-top:5px solid transparent;
+        border-bottom:5px solid transparent;
+        border-left:5px solid v.$color5;
+        border-right:0 solid v.$color5;
+    }
 
-.grad-box {
-    width: 80px;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    background: linear-gradient(to right, transparent 0%, v.$color7 75%);
-    z-index: 2;
+    & .grad-box {
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        background: linear-gradient(to right, transparent 0%, v.$color7 75%);
+        z-index: 2;
+    }
 }
