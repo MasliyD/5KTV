@@ -1,10 +1,24 @@
 $(document).ready(function(){
     $('.slider').slick({
-        //slidesToShow: 3,
-        speed: 300, //500
+        // speed: 300,
+        // easing: 'ease',
+        // infinite: true,
+        // variableWidth: true
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 4,
+        //centerMode: true,
+        variableWidth: true
+    });
+
+    $('.intro__slider').slick({
+        speed: 1800, 
         easing: 'ease',
         //infinite: false,
         //waitForAnimate: false,
-        variableWidth: true
+        //variableWidth: true,
+        //autoplay: true,
+        autoplaySpeed: 3500
     });
 });

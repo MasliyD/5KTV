@@ -2,48 +2,75 @@
 
 .intro {
     margin-bottom: 110px;
+    width: 100%;
+    max-width: 1140px;
+    position: relative;
+    &__inner {
+        position: relative;
+        width: 100%;
+        max-width: 1140px;
+    }
     &__slider-item {
         display: flex;
         height: 500px;
-        width: 1140px;
+        max-width: 1140px;
         position: relative;
         border-radius: 3px;
     }
     &__slider-first {
         background: url('../../images/intro/stars.svg') no-repeat, #EEF1F8;
+        background-size: cover;
+        background-position: center;
+        & .intro__img img {   
+            bottom: 50%;
+            transform: translateY(50%);
+        }
     }
     &__slider-second {
-        background: url(../../images/intro/bg-slide2.png) no-repeat;
+        background: url('../../images/intro/bg-slide2.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        & .intro__content { 
+            width: 55%;
+        }
         & .intro__title {
             color: #fff;
             margin-bottom: 15px;
         }
-        & .intro__content {
-            padding: 70px 0 70px 100px;
-            z-index: 2;
-        }
-        & .intro__text {
-                font-size: 36px;
-        } 
-        & .intro__img {
-            z-index: 2;
+        & .intro__img img {
+            bottom: 0;
         }
     }
     &__slider-third {
-        background: url(../../images/intro/bg-slide3.png) 50% no-repeat, #F5F5F5;
+        background: #F5F5F5;
         overflow: hidden;
         & span {
             font-weight: 800;
         }
-
         & .intro__title {
             text-transform: uppercase;
+        }
+        &:before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -50%;
+        background: url('../../images/intro/bg-slide3.png') center / 50% no-repeat;
+        transform: translate3d(-50%, -50%);
+        }
+        & .intro__img img {   
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%, 50%);
         }
     }
 
     &__content {
         width: 50%;
-        padding: 85px 150px 70px 100px;
+        padding: 85px 20px 70px 8.5%;
+        z-index: 1;
     }
 
     &__title {
@@ -54,37 +81,27 @@
 
     &__text {
         color: v.$color5;
-        width: 300px;
-        margin-bottom: 50px;
-    }
-
-    &__buttons {
-        height: 55px;
-        display: flex;
-        position: absolute;
-        bottom: 77px;
     }
 
     &__btn {
+        height: 55px;
         background: v.$color1;
         color: #fff;
-        height: 55px;
-        padding: 18px 50px;
+        width: 185px;
         border-radius: 3px;
+        position: absolute;
+        bottom: 72px;
+        left: 8.5%;
+        z-index: 1;
     }
 
     &__img {
-        display: flex;
         width: 50%;
-        align-items: center;
         position: relative;
-        
-        &-2 img {
-            max-width: 570px;
-            height: 100%
-        }
-        &-3 img {
-            max-width: 450px;
+        & > img {
+           max-width: 100%;
+           height: auto;
+           position: absolute;
         }
     }
 
@@ -92,80 +109,37 @@
         text-transform: uppercase;
         font-size: 16px;
         padding: 10px 15px;
-        background: v.$color1;
+        background: url('../../images/intro/snow-btn.png');
         color: #fff;
         position: absolute;
         left: 20px;
         top: 55%;
+        border-radius: 3px;
     }
 
     &__price {
         text-transform: uppercase;
-        background: v.$color2;
+        background: url('../../images/intro/snow-price.png');
         color: #fff;
         padding: 10px 15px;
+        font-size: 16px;
         position: absolute;
         top: 25%;
         right: 10%;
+        border-radius: 3px;
     }
-
-    &__img1 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-    }
-
-    &__img2 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    &__img3 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-    &__img4 {
-        position: absolute;
-        bottom: 8%;
-        right: 0;
-    }
-
-    &__snow {
-        background: url(../../images/intro/snow.png) no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 200;
-    }
-
-    &__bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 1;
-    }
-
+    
     &__border-box {
         width: 100px;
         height: 100px;
         position: absolute;
     }
-
     & .box1 {
         border-top: 1px solid v.$color6;
         border-left: 1px solid v.$color6;
         top: 30px;
         left: 30px;
     }
-
     & .box2 {
         border-top: 1px solid v.$color6;
         border-right: 1px solid v.$color6;
@@ -173,14 +147,12 @@
         left: -80px;
         transform: translateY(-50%) rotate(45deg);
     }
-
     & .box3 {
         border-bottom: 1px solid v.$color6;
         border-left: 1px solid v.$color6;
         bottom: 30px;
         left: 30px;
     }
-
     & .box4 {
         border-top: 1px solid v.$color6;
         border-right: 1px solid v.$color6;
@@ -188,14 +160,12 @@
         bottom: -80px;
         transform: translateX(-50%) rotate(-45deg);
     }
-
     & .box5 {
         border-bottom: 1px solid v.$color6;
         border-right: 1px solid v.$color6;
         bottom: 30px;
         right: 30px;
     }
-
     & .box6 {
         border-top: 1px solid v.$color6;
         border-right: 1px solid v.$color6;
@@ -203,14 +173,12 @@
         right: -80px;
         transform: translateY(-50%) rotate(225deg);
     }
-
     & .box7 {
         border-top: 1px solid v.$color6;
         border-right: 1px solid v.$color6;
         top: 30px;
         right: 30px;
     }
-
     & .box8 {
         border-top: 1px solid v.$color6;
         border-right: 1px solid v.$color6;
@@ -228,60 +196,44 @@
     }
     & .slick-track {
         display: flex;
-        gap: 1px;
-    }
-    & .slick-arrow {
-        position: absolute;
-        left: 0;
-        bottom: 77px;
-        z-index: 3;
-        font-size: 0;
-        background: transparent;
-        border-radius: 3px;
+        gap: 3px;
     }
     &.slick-slider {
         position: relative;
     }
-    & .intro-prev {
-        height: 100%;
-        width: 55px;
-        margin-left: 33px;
-        border-radius: 3px;
-        background: v.$color1;
-    }
-    & .intro__arrow-prev {
-        width: 7px;
-        height: 14px;
-        margin: 0 auto;
-        border-top:7px solid transparent;
-        border-bottom:7px solid transparent;
-        border-right:7px solid #fff;
-        border-left:0 solid #fff;
-    }
-    & .slick-arrow.slick-prev {
-        left: 305px;
+    & .slick-arrow {
         width: 55px;
         height: 55px;
-    }
-    & .slick-arrow.slick-next {
-        left: 370px;
-        width: 55px;
-        height: 55px;
-    }
-    & .intro-next {
-        height: 100%;
-        width: 55px;
-        margin-left: 10px;
-        border-radius: 3px;
         background: v.$color1;
+        border-radius: 3px;
+        font-size: 0;
+        position: absolute;
+        bottom: 14.5%;
     }
-    & .intro__arrow-next {
-        width: 7px;
-        height: 14px;
-        margin: 0 auto;
-        border-top:7px solid transparent;
-        border-bottom:7px solid transparent;
-        border-left:7px solid #fff;
-        border-right:0 solid #fff;
+    & .slick-prev {
+        left: 303px;
+        z-index: 1;
+        &:after {
+            content: "";
+            width: 7px;
+            height: 14px;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #fff;
+            border-left: 0 solid #fff;
+        }
+    }
+    & .slick-next {
+        left: 368px;
+        z-index: 1;
+        &:after {
+            content: "";
+            width: 7px;
+            height: 14px;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 7px solid #fff;
+            border-right: 0 solid #fff;
+        }
     }
 }

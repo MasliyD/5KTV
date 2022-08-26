@@ -1,0 +1,239 @@
+@media (max-width: 1400px) {
+    .intro {
+        &__slider-third img {
+            max-width: 400px;
+        }
+        &__title {
+            font-size: 55px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .intro {
+        &__slider-third img {
+            max-width: 300px;
+        }
+        &__content {
+            padding: 65px 20px 60px 8.5%;
+        }
+        &__title {
+            font-size: 47px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__price, &__link {
+            font-size: 15px;
+        }
+        &__border-box {
+            width: 70px;
+            height: 70px;
+        }
+        & .box1 {
+            top: 20px;
+            left: 20px;
+        }
+        & .box2 {
+            top: 50%;
+            left: -60px;
+        }
+        & .box3 {
+            bottom: 20px;
+            left: 20px;
+        }
+        & .box4 {
+            left: 50%;
+            bottom: -60px;
+        }
+        & .box5 {
+            bottom: 20px;
+            right: 20px;
+        }
+        & .box6 {
+            top: 50%;
+            right: -60px;
+        }
+        & .box7 {
+            top: 20px;
+            right: 20px;
+        }
+        & .box8 {
+            left: 50%;
+            top: -60px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro {
+        &__slider-third img {
+            max-width: 260px;
+        }
+        &__text {
+            max-width: 195px;
+        }
+        &__price, &__link {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .intro {
+        &__slider-third {
+            &:before {
+                transform: rotate(-25deg);
+            }
+        }
+        &__content {
+            padding: 25px 45px 0;
+        }
+        &__title {
+            font-size: 58px;
+            text-align: center;
+        }
+        &__text {
+            font-size: 21px;
+            margin: 0;
+            text-align: center; 
+        }
+        &__btn {
+            bottom: 10%;
+        }
+        &__link {
+            left: 0%;
+            top: 60%;
+        }
+        & .box2, & .box4, & .box6, & .box8 {
+            display: none;
+        }
+
+        //Slider
+        & .slick-arrow {
+            bottom: 10%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        &__slider-item {
+            display: block;
+            height: 590px;
+        }
+        &__slider-first .intro__img img {
+            right: 50%;
+            bottom: 0;
+            transform: translateX(50%);
+        }
+        &__slider-second .intro__content {
+            width: 100%;
+        }
+        &__slider-second {
+            & .intro__img img {
+                right: 0;
+            }
+        }
+        &__slider-third .intro__img img {
+            right: unset;
+            bottom: 10px;
+            transform: none;
+            right: 50%;
+            transform: translateX(50%);
+            max-width: 65%;
+        }
+        &__content {
+            width: 100%;
+            padding: 35px 55px 0;
+        }
+        &__title {
+            font-size: 50px;
+        }
+        &__text {
+            font-size: 18px;
+            max-width: 100%;
+        }
+        &__btn {
+            width: 60%;
+            bottom: -14.5%;
+            left: 0;
+        }
+        &__link {
+            left: 30px;
+            top: -140px;
+        }
+        &__price {
+            top: -220px;
+            right: 10%;
+        }
+        &__img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            & > img {
+             max-width: 80%;
+             height: auto;
+            }
+        }
+        & .slick-arrow {
+            bottom: -14.5%;
+        }
+        & .slick-prev {
+            left: auto;
+            right: 70px;
+        }
+        & .slick-next {
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .intro {
+        &__slider-second {
+            overflow: hidden;
+        }
+        &__slider-third .intro__img img {
+            max-width: 70%;
+        }
+        &__content {
+            width: 100%;
+            padding: 35px 15px 0;
+        }
+        &__title {
+        font-size: 48px;
+        }
+        & .box1 {
+            top: 10px;
+            left: 10px;
+        }
+        & .box3 {
+            bottom: 10px;
+            left: 10px;
+        }
+        & .box5 {
+            bottom: 10px;
+            right: 10px;
+        }
+        & .box7 {
+            top: 10px;
+            right: 10px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .intro {
+        &__title {
+            font-size: 43px;
+        }
+        &__slider-third .intro__img img {
+            max-width: 85%;
+        }
+        &__img > img {
+                max-width: 100%;
+        }
+    }
+}
