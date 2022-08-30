@@ -50,7 +50,11 @@
         & .intro__title {
             text-transform: uppercase;
         }
-        &:before {
+        &__content {
+            position: relative;
+            z-index: 20;
+        }
+        &:after {
         content: "";
         position: absolute;
         width: 200%;
@@ -59,6 +63,7 @@
         left: -50%;
         background: url('../../images/intro/bg-slide3.png') center / 50% no-repeat;
         transform: translate3d(-50%, -50%);
+        z-index: 0;
         }
         & .intro__img img {   
             right: 50%;
@@ -66,23 +71,19 @@
             transform: translate(50%, 50%);
         }
     }
-
     &__content {
         width: 50%;
         padding: 85px 20px 70px 8.5%;
         z-index: 1;
     }
-
     &__title {
         font-size: 64px;
         font-weight: 600;
         margin-bottom: 20px;
     }
-
     &__text {
         color: v.$color5;
     }
-
     &__btn {
         height: 55px;
         background: v.$color1;
@@ -94,17 +95,19 @@
         left: 8.5%;
         z-index: 1;
     }
-
     &__img {
         width: 50%;
         position: relative;
+        z-index: 2;
         & > img {
            max-width: 100%;
            height: auto;
            position: absolute;
         }
     }
-
+    &__slider-third img {
+        max-width: 440px;
+    }
     &__link {
         text-transform: uppercase;
         font-size: 16px;
@@ -116,7 +119,6 @@
         top: 55%;
         border-radius: 3px;
     }
-
     &__price {
         text-transform: uppercase;
         background: url('../../images/intro/snow-price.png');
@@ -128,7 +130,6 @@
         right: 10%;
         border-radius: 3px;
     }
-    
     &__border-box {
         width: 100px;
         height: 100px;
@@ -190,7 +191,6 @@
 
 // Slider 
 .intro__inner {
-
     & .slick-list {
         overflow: hidden;
     }

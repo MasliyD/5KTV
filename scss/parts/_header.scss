@@ -4,72 +4,56 @@
 .header {
     font-size: 16px;
     margin-bottom: 20px;
-
     &__top {
         background-color: v.$color7;
     }
-
     &__top-container {
         display: flex;
         justify-content: space-between;
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
     &__item, &__main {
         display: flex;
         gap: 30px;
-
-        &-center {
-            gap: 10px;
-        }
     }
-
     &__circles {
         display: flex;
         gap: 4px;
         justify-content: space-around;
         align-items: center;
     }
-
     &__circle {
         background: v.$color1;
         width: 4px;
         height: 4px;
         border-radius: 50%;
     }
-
     &__link:hover, &__icon:hover {
         color: v.$color5;
     }
-
     &__icon {
         font-size: 20px;
     }
-
     &__main {
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
     &__contact {
         font-size: 25px;
         font-weight: 500;
     }
-
     &__contact-icon {
         display: none;
         color: #1074EB;
         font-size: 31px;
     }
-
     &__form {
         position: relative;
         width: 292px;
     }
-
     &__search {
         width: 100%;
         height: 37px;
@@ -86,8 +70,18 @@
             color: #fff;
             transform: translateY(-50%);
         }
+        &-mini {
+            display: none;
+            position: absolute;
+            right: 3%;
+            font-size: 18px;
+            top: 50%;
+            color: v.$color-text;
+            transform: translateY(-50%);
+            background: transparent;
+            opacity: 0.9;
+        }
     }
-
     &__social {
         display: flex;
         gap: 15px;
@@ -99,23 +93,34 @@
             }
         }
     }
-
     &__btn {
         background: v.$color2;
         padding: 8px 14px 10px 15px;
         color: #fff;
         font-weight: 500;
         border-radius: 3px;
+        min-width: 140px;
     }
-
     &__person {
         color: v.$color1;
         font-size: 31px;
     }
+    &__email {
+        display: none;
+        position: absolute;
+        bottom: -36px;
+        right: 0;
+        &-icon {
+            display: none;
+            position: absolute;
+            bottom: -37px;
+            right: 110px;
+            color: v.$color2;
+        }
+    }
 }
 
 //nav
-
 .nav {
     height: 55px;
     background: v.$color7;
@@ -124,15 +129,15 @@
     white-space: nowrap;
     align-items: center;
     border-radius: 3px;
-    //gap: 22px;
     position: relative;
-    //padding-right: 20px;
-    
-
     &__menu {
         height: 100%;
+        &:hover .nav__drop {
+            display: flex;
+            border-radius: 3px 3px 0 0;
+            outline: solid rgba(0, 0, 0, .7) 10000px;
+        }
     }
-
     &__label {
         background: v.$color1;
         color: #fff;
@@ -145,12 +150,13 @@
         cursor: pointer;
         position: relative;
         z-index: 5;
-
         & > span {
             padding-left: 18px;
         }
+        & .fa-xmark {
+            display: none;
+        }
     }
-
     &__drop {
         display: none;
         //display: flex;
@@ -162,7 +168,6 @@
         padding: 56px 15px 0 0;
         z-index: 4;
     }
-
     &__category-lab {
         background: v.$color1;
         height: 50px;
@@ -179,13 +184,12 @@
             border-top: 0;
         }
     }
-
+    &__back {
+        display: none;
+    }
     &__col {
         width: 50%;
-        //height: 100%;
-        //margin-bottom: 20px;
     }
-    
     &__arrow {
         width: 0;
         height: 0;
@@ -194,18 +198,18 @@
         border-left:4px solid #fff;
         border-right:0 solid #fff;
     }
-
     &__submenu {
         display: none;
         position: absolute;
         top: 0;
-        left: 99%;
-        padding: 70px 15px 30px 15px;
+        left: 92%;
+        padding: 70px 15px 30px 20px;
         background: v.$color1;
         height: 100%;
         width: 500px;
         border-radius: 0 3px 0 0;
         //white-space: pre-wrap;
+        transition: height 2s;
         &-item {
             position: relative;
             margin-bottom: 22px;
@@ -229,7 +233,6 @@
             }
         }
     }
-
     &__sub {
         cursor: pointer;
         white-space: pre-wrap;
@@ -244,33 +247,12 @@
             }
         }
     }
-
     &__check {
         display: none;
-        &:checked ~ .nav__drop {
-            display: flex;
-            border-radius: 3px 3px 0 0;
-        }
-
-        &:checked ~ .bg {
-            position: absolute;
-            top: -100vh;
-            left: -100vw;
-            background: #000;
-            opacity: 0.7;
-            width: 200vw;
-            height: 1000vh;
-            z-index: 4;
-        }
     }
-
     &__check2 {
         display: none;
-        &:checked ~ .nav__drop {
-            border-radius: 3px 0 0 0;
-        }
     }
-
     &__check3 ~ .nav__sub::before {
         content: '\+';
         text-align: center;
@@ -286,18 +268,12 @@
 .test {
     height: 900px;
     width: 100%;
-}
+} 
 
 @for $i from 0 to 10 {
     $num: $i + 1;
-    #category-check#{$num} {
-        &:checked ~ .category-check#{$num} {
-            background: rgba(255, 255, 255, 0.4);
-            border-top: 0;
-        }
-        &:checked ~ .nav__submenu#{$num} {
-            display: block;
-        }
+    .nav__drop li:nth-child(#{$num}):hover .nav__submenu#{$num} {
+        display: block;
     }
 }
 
@@ -322,7 +298,6 @@
         overflow: hidden;
         position: relative;
     }
-
     &__link {
         height: 100%;
         display: flex;
@@ -335,17 +310,14 @@
     & .slider {
         padding: 0 20px;
     }
-
     & .slick-track {
         display: flex;
         height: 100%;
         gap: 23px;
     }
-
     & .slick-list {
         overflow: hidden;
     }
-
     & .slider .slick-arrow {
         position: absolute;
         top: 50%;
@@ -354,7 +326,6 @@
         font-size: 0;
         background: transparent;
     }
-
     & .slider .slick-arrow.slick-next {
         right: 10px;
         border-top:5px solid transparent;
@@ -362,7 +333,6 @@
         border-left:5px solid v.$color5;
         border-right:0 solid v.$color5;
     }
-
     & .grad-box {
         width: 80px;
         height: 100%;

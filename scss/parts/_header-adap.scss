@@ -1,4 +1,5 @@
 //Header adaptive
+@use '../vars' as v;
 
 @media (max-width: 1400px) {
     
@@ -21,8 +22,260 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .header {
+        &__item-center {
+            display: none;
+        }
+        &__social {
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            gap: 20px;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &__social {
+            gap: 15px;
+            transform: none;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .nav {
+        &__menu:hover .nav__drop {
+            display: none;
+        }
+        &__submenu {
+            width: 450px;
+        }
+        &__category-lab {
+            &:hover {
+                background: 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+            }
+        }
+        &__check:checked ~ .nav__drop {
+            display: flex;
+            border-radius: 3px 3px 0 0;
+            outline: solid rgba(0, 0, 0, .7) 10000px;
+        }
+        &__check2:checked ~ .nav__drop {
+            border-radius: 3px 0 0 0;
+        }
+        &__check2:checked ~ .nav__category-lab .nav__back {
+            display: block;
+        }
+        &__check2:checked ~ .nav__category-lab .nav__name {
+            display: none;
+        }
+        &__check2:checked ~ .nav__category-lab .nav__arrow {
+            border-top:4px solid #fff;
+            border-bottom:0 solid #fff;
+            border-left:4px solid transparent;
+            border-right:4px solid transparent;
+        }
+    }
+    
+    @for $i from 0 to 10 {
+        $num: $i + 1;
+        .nav__drop li:nth-child(#{$num}):hover .nav__submenu#{$num} {
+            display: none;
+        }
+        
+    }
+
+    @for $i from 0 to 10 {
+        $num: $i + 1;
+        #category-check#{$num} {
+            &:checked ~ .category-check#{$num} {
+                background: rgba(255, 255, 255, 0.4);
+                border-top: 0;
+            }
+            &:checked ~ .nav__submenu#{$num} {
+                display: block;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .header {
+        &__link:first-child {
+            display: none;
+        }
+        &__form {
+            position: absolute;
+            width: 35%;
+            top: 8px;
+            left: 150px;
+        }
+        &__search {
+            &-btn {
+                display: none;
+            }
+            &-mini {
+                display: block;
+            }
+        }
+        &__social {
+            display: none;
+        }
+        &__submenu {
+            top: -100px;
+        }
+    }
+    .nav {
+        &__submenu {
+            padding: 70px 15px 30px 45px;
+            width: 285px;
+        }
+        &__submenu-inner {
+            display: block;
+        }
+        &__col {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding-bottom: 105px;
+        position: relative;
+        &__top {
+            background: #fff;
+        }
+        &__item:last-child {
+            z-index: 2;
+        }
+        &__main {
+            position: relative;
+            padding-bottom: 16px;
+            border-bottom: 1px solid v.$color5;
+        }
+        &__logo {
+            max-width: 105px;
+        }
+        &__link {
+            display: none;
+        }
+        &__contact {
+            display: block;
+            position: absolute;
+            bottom: -37px;
+            left: 32px;
+            font-size: 16px;
+        }
+        &__contact-icon {
+            position: absolute;
+            bottom: -40px;
+            font-size: 23px;
+            color: v.$color2;
+        }
+        &__form {
+            position: absolute;
+            width: 100%;
+            top: 115px;
+            left: 0;
+        }
+        &__btn {
+            display: none;
+        }
+        &__person {
+            position: absolute;
+            right: 50px;
+        }
+        &__item:last-child {
+            position: absolute;
+            right: 110px;
+            top: 52px;
+        }
+        &__email {
+            display: block;
+            &-icon {
+                display: block;
+            }
+        }
+    }
+
+    //nav
+    .nav {
+        background: transparent;
+        // height: 103px;
+        height: 0;
+        & .grad-box {
+            display: none;
+        }
+        &__drop {
+            width: 100%;
+            top: -85px;
+            padding: 95px 15px 0;
+        }
+        &__label {
+            padding: 0;
+            height: 31px;
+            width: 23.25px;
+            font-weight: 400;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: -46px;
+            & > span {
+                display: none;
+            }
+        }
+        &__check:checked ~ .nav__label .fa-xmark {
+            display: block;
+        }
+        &__check:checked ~ .nav__label .fa-bars {
+            display: none;
+        }
+        &__check:checked ~ .nav__label {
+            right: 15px;
+        }
+        &__submenu {
+            left: 0;
+            top: 0;
+            position: unset;
+            padding: 30px 15px 30px 5px;
+            height: 270px;
+            width: 100%;
+        }
+    }
+
+    .nav__slider {
         display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        &__item {
+            gap: 15px;
+        }
+        &__item:last-child {
+            right: 80px;
+        }
+        &__contact {
+            left: 25px;
+        }
+        &__person {
+            right: 35px;
+        }
+        &__email-icon {
+            right: 97px;
+        }
+    }
+    .nav {
+        &__submenu {
+            width: 100%;
+        }
     }
 }

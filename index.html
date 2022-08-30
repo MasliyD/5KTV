@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    
     <!--Header-->
     <header class="header">
         <div class="header__top">
@@ -48,10 +48,13 @@
             <img class="header__logo" src="images/logo.svg" alt="Логотип">
             <a class="header__contact" href="tel:+380989075833"> +38 (098) 90 75 833 </a>
             <a href="tel:+380989075833" class="header__contact-icon"><i class="fa-solid fa-square-phone-flip"></i></a>
+            <a href="#" class="header__email-icon"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#" class="header__email">info@5kvt.ua</a>
             
             <form class="header__form">
-                <input class="header__search" type="search" placeholder="Що шукаємо?..">
+                <input class="header__search" type="search" placeholder="Пошук">
                 <button class="header__search-btn" type="submit">Пошук</button>
+                <button class="header__search-mini" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             
             <div class="header__social">
@@ -78,24 +81,24 @@
         </div> <!--header__main-->
 
         <div class="header__nav">
+
             <nav class="nav">
                 <div class="nav__menu">
+                    
                     <input id="main-check" class="nav__check" type="checkbox" name="menu"/>
-                    <label for="main-check" class="nav__label"><i class="fa-solid fa-bars"></i><span>Каталог</span></label>
-                    <div class="bg"></div>
+                    <label for="main-check" class="nav__label"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i><span>Каталог</span></label>
                     <ul class="nav__drop">
-                            
-                            
+                        <li>
                             <input id="category-check1" class="nav__check2" type="checkbox" name="menu"/>
-                            <label for="category-check1" class="nav__category-lab category-check1">Акумулятори<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu1">
+                            <label for="category-check1" class="nav__category-lab category-check1"><span class="nav__back">Назад</span><span class="nav__name">Акумулятори</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu1">
                             <div class="nav__submenu-inner">
                                 <div class="nav__col">
                                     <div class="nav__submenu-item">
                                         <input id="sub-check1" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
-                                        <label for="sub-check1" class="nav__sub sub-check1">Підкатегорія <span>(123)</span></label>
+                                        <label for="sub-check1" class="nav__sub sub-check1">Акумулятори <span>(123)</span></label>
                                         <ul class="nav__sub-list nav__sub-list1">
-                                            <li><a href="#">Підпідкатегорія 1<span>(123)</span></a></li>
+                                            <li><a href="#">Акумулятори<span>(123)</span></a></li>
                                             <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                             <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                             <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -306,19 +309,20 @@
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                            </ul>
+                        </li>
                             
-
+                        <li>
                             <input id="category-check2" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check2" class="nav__category-lab category-check2">Блоки контролю<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu2">
+                            <label  for="category-check2" class="nav__category-lab category-check2"><span class="nav__back">Назад</span><span class="nav__name">Блоки контролю</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu2">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
                                             <input id="sub-check22" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
-                                            <label for="sub-check22" class="nav__sub sub-check22">Підкатегорія 0<span>(123)</span></label>
+                                            <label for="sub-check22" class="nav__sub sub-check22">Блоки контролю<span>(123)</span></label>
                                             <ul class="nav__sub-list nav__sub-list22">
-                                                <li><a href="#">Підпідкатегорія 0<span>(123)</span></a></li>
+                                                <li><a href="#">Блоки контролю<span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -529,16 +533,18 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check3" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check3" class="nav__category-lab category-check3">Генератори<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu3">
+                            <label  for="category-check3" class="nav__category-lab category-check3"><span class="nav__back">Назад</span><span class="nav__name">Генератори</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu3">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
                                             <input id="sub-check43" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
-                                            <label for="sub-check43" class="nav__sub sub-check43">Підкатегорія <span>(123)</span></label>
+                                            <label for="sub-check43" class="nav__sub sub-check43">Генератори <span>(123)</span></label>
                                             <ul class="nav__sub-list nav__sub-list43">
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -601,18 +607,20 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check4" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check4" class="nav__category-lab category-check4">Кліматична техніка<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu4">
+                            <label  for="category-check4" class="nav__category-lab category-check4"><span class="nav__back">Назад</span><span class="nav__name">Кліматична техніка</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu4">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
                                             <input id="sub-check49" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
-                                            <label for="sub-check49" class="nav__sub sub-check49">Підкатегорія <span>(123)</span></label>
+                                            <label for="sub-check49" class="nav__sub sub-check49">Кліматична техніка <span>(123)</span></label>
                                             <ul class="nav__sub-list nav__sub-list49">
-                                                <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
+                                                <li><a href="#">Генератори <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -673,16 +681,18 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check5" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check5" class="nav__category-lab category-check5">Опалення<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu5">
+                            <label  for="category-check5" class="nav__category-lab category-check5"><span class="nav__back">Назад</span><span class="nav__name">Опалення</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu5">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
                                             <input id="sub-check55" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
-                                            <label for="sub-check55" class="nav__sub sub-check55">Підкатегорія <span>(123)</span></label>
+                                            <label for="sub-check55" class="nav__sub sub-check55">Опалення <span>(123)</span></label>
                                             <ul class="nav__sub-list nav__sub-list55">
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -694,7 +704,7 @@
                                             <input id="sub-check56" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
                                             <label for="sub-check56" class="nav__sub sub-check56">Підкатегорія <span>(123)</span></label>
                                             <ul class="nav__sub-list nav__sub-list56">
-                                                <li><a href="#">Підпідкатегорія 2<span>(123)</span></a></li>
+                                                <li><a href="#">Опалення<span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -745,16 +755,18 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check6" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check6" class="nav__category-lab category-check6">Перфоратори<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu6">
+                            <label  for="category-check6" class="nav__category-lab category-check6"><span class="nav__back">Назад</span><span class="nav__name">Перфоратори</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu6">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
                                             <input id="sub-check61" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
-                                            <label for="sub-check61" class="nav__sub sub-check61">Підкатегорія <span>(123)</span></label>
+                                            <label for="sub-check61" class="nav__sub sub-check61">Перфоратори <span>(123)</span></label>
                                             <ul class="nav__sub-list nav__sub-list61">
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -817,16 +829,18 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check7" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check7" class="nav__category-lab category-check7">Дроти<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu7">
+                            <label  for="category-check7" class="nav__category-lab category-check7"><span class="nav__back">Назад</span><span class="nav__name">Дроти</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu7">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
                                             <input id="sub-check67" class="nav__check3 visually-hidden" type="checkbox" name="menu"/>
-                                            <label for="sub-check67" class="nav__sub sub-check67">Підкатегорія <span>(123)</span></label>
+                                            <label for="sub-check67" class="nav__sub sub-check67">Дроти <span>(123)</span></label>
                                             <ul class="nav__sub-list nav__sub-list67">
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
                                                 <li><a href="#">Підпідкатегорія <span>(123)</span></a></li>
@@ -889,11 +903,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check8" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check8" class="nav__category-lab category-check8">Акумулятори<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu8">
+                            <label  for="category-check8" class="nav__category-lab category-check8"><span class="nav__back">Назад</span><span class="nav__name">Акумулятори</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu8">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
@@ -961,11 +977,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check9" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check9" class="nav__category-lab category-check9">Акумулятори<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu9">
+                            <label  for="category-check9" class="nav__category-lab category-check9"><span class="nav__back">Назад</span><span class="nav__name">Акумулятори</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu9">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
@@ -1033,11 +1051,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
+                        <li>
                             <input id="category-check10" class="nav__check2" type="checkbox" name="menu"/>
-                            <label  for="category-check10" class="nav__category-lab category-check10">Акумулятори<div class="nav__arrow"></div></label>
-                            <div class="nav__submenu nav__submenu10">
+                            <label  for="category-check10" class="nav__category-lab category-check10"><span class="nav__back">Назад</span><span class="nav__name">Акумулятори</span><div class="nav__arrow"></div></label>
+                            <ul class="nav__submenu nav__submenu10">
                                 <div class="nav__submenu-inner">
                                     <div class="nav__col">
                                         <div class="nav__submenu-item">
@@ -1105,9 +1125,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
+                        </li>
 
                     </ul>
+                    
                 </div>
 
 
