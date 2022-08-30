@@ -18,7 +18,7 @@
         border-radius: 3px;
     }
     &__slider-first {
-        background: url('../../images/stars.svg') no-repeat, #EEF1F8;
+        background: url('../images/stars.svg') no-repeat, #EEF1F8;
         background-size: cover;
         background-position: center;
         & .intro__img img {   
@@ -27,7 +27,7 @@
         }
     }
     &__slider-second {
-        background: url('../../images/bg-slide2.png') no-repeat;
+        background: url('../images/bg-slide2.png') no-repeat;
         background-size: cover;
         background-position: center;
         & .intro__content { 
@@ -61,7 +61,7 @@
         height: 200%;
         top: -50%;
         left: -50%;
-        background: url('../../images/bg-slide3.png') center / 50% no-repeat;
+        background: url('../images/bg-slide3.png') center / 50% no-repeat;
         transform: translate3d(-50%, -50%);
         z-index: 0;
         }
@@ -112,7 +112,7 @@
         text-transform: uppercase;
         font-size: 16px;
         padding: 10px 15px;
-        background: url('../../images/snow-btn.png');
+        background: url('../images/snow-btn.png');
         color: #fff;
         position: absolute;
         left: 20px;
@@ -121,7 +121,7 @@
     }
     &__price {
         text-transform: uppercase;
-        background: url('../../images/snow-price.png');
+        background: url('../images/snow-price.png');
         color: #fff;
         padding: 10px 15px;
         font-size: 16px;
