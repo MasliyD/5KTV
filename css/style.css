@@ -2338,11 +2338,8 @@ body {
   }
 }
 @media (max-width: 575px) {
-  .goods__price {
+  .goods__pricebox {
     font-size: 20px;
-  }
-  .goods__price-old {
-    font-size: 40px;
   }
 }
 @media (max-width: 575px) {

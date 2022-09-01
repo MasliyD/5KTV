@@ -26,12 +26,16 @@
             align-items: center;
             @include m.blue-btn;
         }
-        &__price {
+        &__pricebox {
             font-size: 20px;
-            &-old {
-                font-size: 40px;
-            }
         }
+
+        // &__price {
+        //     font-size: 20px;
+        //     &-old {
+        //         font-size: 40px;
+        //     }
+        // }
         &__btn {
             width: 67%;
         }
