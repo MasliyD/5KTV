@@ -29,15 +29,11 @@
         &__pricebox {
             font-size: 20px;
         }
-
-        // &__price {
-        //     font-size: 20px;
-        //     &-old {
-        //         font-size: 40px;
-        //     }
-        // }
         &__btn {
             width: 67%;
+            & > i {
+                display: none;
+            }
         }
     }
 }
@@ -46,6 +42,9 @@
     .goods {
         &__slider-item {
             height: 430px;
+        }
+        &__btn {
+            width: 60%;
         }
     }
 }
