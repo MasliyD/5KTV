@@ -1,14 +1,11 @@
 @use '../vars' as v;
+@use '../mixins' as m;
 
 .intro {
     margin-bottom: 110px;
-    width: 100%;
-    max-width: 1140px;
     position: relative;
     &__inner {
         position: relative;
-        width: 100%;
-        max-width: 1140px;
     }
     &__slider-item {
         display: flex;
@@ -85,14 +82,11 @@
         color: v.$color5;
     }
     &__btn {
-        height: 55px;
-        background: v.$color1;
-        color: #fff;
         width: 185px;
-        border-radius: 3px;
         position: absolute;
         bottom: 72px;
         left: 8.5%;
+        @include m.blue-btn;
         z-index: 1;
     }
     &__img {
@@ -202,10 +196,8 @@
         position: relative;
     }
     & .slick-arrow {
+        @include m.blue-btn;
         width: 55px;
-        height: 55px;
-        background: v.$color1;
-        border-radius: 3px;
         font-size: 0;
         position: absolute;
         bottom: 14.5%;

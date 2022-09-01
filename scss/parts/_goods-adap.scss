@@ -1,0 +1,47 @@
+@use '../vars' as v;
+@use '../mixins' as m;
+
+@media (max-width: 1400px) {
+    .goods {
+        &__price-old {
+            position: absolute;
+            left: 20px;
+            bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .goods {
+        &__model {
+            font-size: 16px;
+        }
+        &__stat {
+            position: absolute;
+            bottom: -85px;
+            right: 0;
+            width: 51px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include m.blue-btn;
+        }
+        &__price {
+            font-size: 20px;
+            &-old {
+                font-size: 40px;
+            }
+        }
+        &__btn {
+            width: 67%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .goods {
+        &__slider-item {
+            height: 430px;
+        }
+    }
+}

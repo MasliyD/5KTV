@@ -1,0 +1,142 @@
+@use '../vars' as v;
+@use '../mixins' as m;
+
+.goods {
+    position: relative;
+    &__title {
+        font-size: 36px;
+        margin-bottom: 70px;
+    }
+    &__slider-item {
+        height: 480px;
+        position: relative;
+        &.third .goods__new {
+            display: flex;
+        }
+        &.fourth .goods__sell {
+            display: flex;
+        }
+        &.sixth .goods__sell {
+            display: flex;
+        }
+        &.eighth .goods__new {
+            display: flex;
+        }
+    }
+    &__img {
+        position: relative;
+        padding: 30px;
+        background: v.$color7;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        & > img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__favourite {
+        color: v.$color1;
+        position: absolute;
+        top: 18px;
+        right: 17px;
+        cursor: pointer;
+    }
+    &__new {
+        @include m.goods-span;
+        //display: flex;
+        background: v.$color2;
+    }
+    &__sell {
+        @include m.goods-span;
+        //display: flex;
+        background: v.$color3;
+    }
+    &__model {
+        display: block;
+        text-transform: uppercase;
+        color: v.$color5;
+        margin-bottom: 7px;
+    }
+    &__pricebox {
+        position: absolute;
+        bottom: 85px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 24px;
+    }
+    &__price {
+        font-weight: 500;
+        &-old {
+            text-decoration: line-through;
+            color: v.$color6;
+        }
+    }
+    &__stat {
+        color: v.$color1;
+    }
+    &__btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        @include m.blue-btn;
+        & > i {
+            margin-right: 10px;
+        }
+    }
+
+    //Slider
+    & .slick {
+        &-slide {
+            margin: 0 15px;
+        }
+        &-list {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        &-list {
+            overflow: hidden;
+        }
+        &-track {
+            display: flex;
+        }
+        &-arrow {
+            @include m.blue-btn;
+            width: 55px;
+            font-size: 0;
+            position: absolute;
+            bottom: 14.5%;
+        }
+        &-prev {
+            right: 65px;
+            top: 0;
+            z-index: 1;
+            &:after {
+                content: "";
+                width: 7px;
+                height: 14px;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-right: 7px solid #fff;
+                border-left: 0 solid #fff;
+            }
+        }
+        &-next {
+            right: 0;
+            top: 0;
+            z-index: 1;
+            &:after {
+                content: "";
+                width: 7px;
+                height: 14px;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-left: 7px solid #fff;
+                border-right: 0 solid #fff;
+            }
+        }
+    }
+}
+

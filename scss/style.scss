@@ -2,8 +2,11 @@
 @use 'visually-hidden';
 @use 'common';
 
+
 // Header
 @use 'parts/header';
 @use 'parts/_header-adap';
 @use 'parts/intro';
 @use 'parts/intro-adap';
+@use 'parts/goods';
+@use 'parts/goods-adap';
