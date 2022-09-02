@@ -47,4 +47,39 @@ $(document).ready(function(){
         ]
         
     });
+
+    $('.advant__slider').slick({
+        speed: 400,
+        slidesToShow: 4,
+        arrows: false,
+        //autoplay: true,
+        autoplaySpeed: 6000,
+        //waitForAnimate: false,
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    dots: true,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 585,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+        
+    });
 });

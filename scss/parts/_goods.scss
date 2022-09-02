@@ -4,10 +4,6 @@
 .goods {
     position: relative;
     margin-bottom: 100px;
-    &__title {
-        font-size: 36px;
-        margin-bottom: 70px;
-    }
     &__slider-item {
         height: 480px;
         position: relative;
@@ -134,4 +130,3 @@
         }
     }
 }
-
