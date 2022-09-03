@@ -201,6 +201,12 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.header__main a:hover, .header__main button:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .header__contact {
   font-size: 25px;
   font-weight: 500;
@@ -449,11 +455,6 @@ body {
   border-radius: 3px;
   margin-right: 10px;
   display: inline-block;
-}
-
-.test {
-  height: 900px;
-  width: 100%;
 }
 
 .nav__drop li:nth-child(1):hover .nav__submenu1 {
@@ -1241,6 +1242,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.nav__link:hover {
+  color: #9C9C9C;
+}
 
 .header .slider {
   padding: 0 20px;
@@ -1271,6 +1275,10 @@ body {
   border-bottom: 5px solid transparent;
   border-left: 5px solid #9C9C9C;
   border-right: 0 solid #9C9C9C;
+}
+.header .slider .slick-arrow.slick-next:hover {
+  border-left: 5px solid #C9C9C9;
+  border-right: 0 solid #C9C9C9;
 }
 .header .grad-box {
   width: 80px;
@@ -1714,6 +1722,15 @@ body {
   font-size: 16px;
   z-index: 1;
 }
+.intro__btn:hover {
+  opacity: 0.85;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 @media (max-width: 575px) {
   .intro__btn {
     height: 50px;
@@ -1842,6 +1859,15 @@ body {
   font-size: 0;
   position: absolute;
   bottom: 14.5%;
+}
+.intro__inner .slick-arrow:hover {
+  opacity: 0.85;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 575px) {
   .intro__inner .slick-arrow {
@@ -2191,6 +2217,12 @@ body {
   color: #9C9C9C;
   margin-bottom: 7px;
 }
+.goods__model:hover {
+  color: #C9C9C9;
+}
+.goods__name:hover {
+  color: #787878;
+}
 .goods__pricebox {
   position: absolute;
   bottom: 85px;
@@ -2213,6 +2245,12 @@ body {
 .goods__stat {
   color: #1074EB;
 }
+.goods__stat:hover {
+  opacity: 0.85;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .goods__btn {
   position: absolute;
   bottom: 0;
@@ -2223,6 +2261,15 @@ body {
   border-radius: 3px;
   height: 55px;
   font-size: 16px;
+}
+.goods__btn:hover {
+  opacity: 0.85;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 575px) {
   .goods__btn {
@@ -2257,6 +2304,15 @@ body {
   font-size: 0;
   position: absolute;
   bottom: 14.5%;
+}
+.goods .slick-arrow:hover {
+  opacity: 0.85;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 575px) {
   .goods .slick-arrow {
@@ -2322,6 +2378,15 @@ body {
     border-radius: 3px;
     height: 55px;
     font-size: 16px;
+  }
+  .goods__stat:hover {
+    opacity: 0.85;
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
 @media (max-width: 575px) and (max-width: 575px) {
@@ -2404,6 +2469,15 @@ body {
   font-size: 16px;
   background: #fff;
   color: #1074EB;
+}
+.catalog__btn:hover {
+  opacity: 0.85;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 575px) {
   .catalog__btn {
@@ -2616,6 +2690,15 @@ body {
   font-size: 16px;
   width: 100%;
   margin: 30px 0;
+}
+.footer__btn:hover {
+  opacity: 0.85;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 575px) {
   .footer__btn {

@@ -40,6 +40,10 @@
         align-items: center;
         padding-top: 20px;
         padding-bottom: 20px;
+        & a:hover, & button:hover {
+            opacity: 0.8;
+            transition: all .3s;
+        }
     }
     &__contact {
         font-size: 25px;
@@ -265,11 +269,6 @@
     }
 }
 
-.test {
-    height: 900px;
-    width: 100%;
-} 
-
 @for $i from 0 to 10 {
     $num: $i + 1;
     .nav__drop li:nth-child(#{$num}):hover .nav__submenu#{$num} {
@@ -302,6 +301,9 @@
         height: 100%;
         display: flex;
         align-items: center;
+        &:hover {
+            color: v.$color5;
+        }
     }
 }
 
@@ -325,6 +327,7 @@
         z-index: 3;
         font-size: 0;
         background: transparent;
+        
     }
     & .slider .slick-arrow.slick-next {
         right: 10px;
@@ -332,6 +335,10 @@
         border-bottom:5px solid transparent;
         border-left:5px solid v.$color5;
         border-right:0 solid v.$color5;
+        &:hover {
+            border-left:5px solid v.$color6;
+            border-right:0 solid v.$color6;
+        }
     }
     & .grad-box {
         width: 80px;

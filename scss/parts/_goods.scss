@@ -48,6 +48,12 @@
         text-transform: uppercase;
         color: v.$color5;
         margin-bottom: 7px;
+        &:hover {
+            color: v.$color6;
+        }
+    }
+    &__name:hover {
+        color: lighten(v.$color-text, 25%);
     }
     &__pricebox {
         position: absolute;
@@ -66,6 +72,10 @@
     }
     &__stat {
         color: v.$color1;
+        &:hover {
+            opacity: 0.85;
+            transition: all .3s;
+        }
     }
     &__btn {
         position: absolute;
