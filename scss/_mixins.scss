@@ -29,3 +29,9 @@
         height: 50px;
     }
 }
+
+@mixin blue-btn-min {
+    color: #fff;
+    background: v.$color1;
+    border-radius: 3px;
+}

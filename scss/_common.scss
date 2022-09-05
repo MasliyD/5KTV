@@ -2,7 +2,7 @@
 
 body {
     color: v.$color-text;
-    font-family: lato, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.2;
 }
@@ -41,13 +41,10 @@ body {
 }
 
 @media (max-width: 575px) {
+    .page:not(header>.page) {
+        overflow-x: hidden;
+    }
     .page {
         padding: 0 8px;
     }
 }
-
-// @media (max-width: 375px) {
-//     .page {
-//         padding: 0;
-//     }
-// }
