@@ -1,0 +1,49 @@
+
+
+@media (max-width:1200px) {
+    .descript {
+        &__personbox {
+            display: block;
+        }
+        & .catalog__rating-area {
+            width: 65%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .descript {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 100%;
+            padding: 0 15px;
+        }
+        &__content {
+            margin-bottom: 10px;
+        }
+        &__personbox {
+            display: flex;
+        }
+        & .catalog__rating-area {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .descript {
+        .slick-arrow {
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .descript {
+        &__personbox {
+            display: block;
+        }
+    }
+}

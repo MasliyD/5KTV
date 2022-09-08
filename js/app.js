@@ -74,4 +74,8 @@ $(document).ready(function(){
         ]
         
     });
+
+    $('.descript__slider').slick ({
+        speed: 800
+    })
 });

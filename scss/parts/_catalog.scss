@@ -56,6 +56,13 @@
         height: 915px;
         background: v.$color7;
         padding: 20px 20px 30px;
+        & label,
+        & input {
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
     &__content {
         width: 75%;
@@ -199,6 +206,9 @@
             display: flex;
             gap: 20px;
         }
+    }
+    &__page:hover {
+        opacity: 0.8
     }
     &__pages-btn {
         @include m.blue-btn;

@@ -1,0 +1,14 @@
+
+@media (max-width: 768px) {
+    .features {
+        padding: 0 15px;
+        &__inner {
+            height: auto;
+            column-count: 1;
+            margin-top: 25px;
+        }
+        &__item {
+            margin-bottom: 10px;
+        }
+    }
+}
