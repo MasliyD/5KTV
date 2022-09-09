@@ -77,5 +77,9 @@ $(document).ready(function(){
 
     $('.descript__slider').slick ({
         speed: 800
-    })
+    });
+    $('.contact__slider').slick ({
+        speed: 800,
+        slidesToShow: 3
+    });
 });
