@@ -3736,7 +3736,6 @@ body {
 .contact__map {
   width: 100%;
   height: 500px;
-  background: teal;
   border-radius: 3px;
   margin-bottom: 50px;
 }
@@ -3747,6 +3746,7 @@ body {
 .contact__slider-item img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 .contact__connect {
   display: -webkit-box;
@@ -3861,4 +3861,75 @@ body {
   border-bottom: 5px solid transparent;
   border-left: 5px solid #fff;
   border-right: 0 solid #fff;
+}
+
+@media (max-width: 1280px) {
+  .contact__connect {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__social {
+    width: 30%;
+  }
+  .contact__social-phonebox {
+    display: block;
+  }
+  .contact__social-item {
+    display: block;
+  }
+  .contact__requisit {
+    width: 60%;
+  }
+}
+@media (max-width: 960px) {
+  .contact__connect {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact__social {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact__requisit {
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .contact__title {
+    margin: 20px 0 30px;
+  }
+  .contact__map {
+    height: 250px;
+  }
+  .contact .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .slick-dots li {
+    margin: 0 8px;
+  }
+  .contact .slick-dots li.slick-active button {
+    background-color: #1074EB;
+  }
+  .contact .slick-dots button {
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(16, 116, 235, 0.3);
+  }
+}
+@media (max-width: 375px) {
+  .contact__requisit-item {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+@use '../vars' as v;
+
+
+@media (max-width: 1280px) {
+    .contact {
+        &__connect {
+            justify-content: space-between;
+        }
+        &__social {
+            width: 30%;
+        }
+        &__social-phonebox {
+            display: block;
+        }
+        &__social-item {
+            display: block;
+        }
+        &__requisit {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .contact {
+        &__connect {
+            flex-wrap: wrap;
+        }
+        &__social {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        &__requisit {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        &__title {
+            margin: 20px 0 30px;
+        }
+        &__map {
+            height: 250px;
+        }
+        & .slick-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & li {
+                margin: 0 8px;
+                &.slick-active button {
+                    background-color: v.$color1;
+                }
+            }
+            & button {
+                font-size: 0;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: rgba(16, 116, 235, 0.3);
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .contact {
+        &__requisit-item {
+            display: block;
+        }
+    }
+}

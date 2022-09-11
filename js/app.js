@@ -19,8 +19,8 @@ $(document).ready(function(){
         speed: 400,
         slidesToShow: 4,
         slidesToScroll: 2,
-        //autoplay: true,
-        //autoplaySpeed: 6000,
+        autoplay: true,
+        autoplaySpeed: 6000,
         responsive: [
             {
                 breakpoint: 960,
@@ -72,7 +72,6 @@ $(document).ready(function(){
                 }
             }
         ]
-        
     });
 
     $('.descript__slider').slick ({
@@ -80,6 +79,32 @@ $(document).ready(function(){
     });
     $('.contact__slider').slick ({
         speed: 800,
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 585,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 375,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    arrows: false
+                }
+            }
+        ]
     });
 });
